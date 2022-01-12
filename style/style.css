@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========project start============= */
+
+/* ==================================== */
+
+/* ============header start============= */
+
+body{
+    background-color: #F3F1FF;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #562EFF;
+}
+.header-container{
+    width: 60%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+/* idea part */
+.idea-part{
+   width: 140px;
+   height: 100%;
+  
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.idea-part img{
+    width: 25%;
+}
+.idea-part h1{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+}
+/* idae part */
+/* nav part */
+
+.nav ul{
+    width: 300px;
+   height: 100%;
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  
+}
+
+.nav ul li{
+    list-style: none;
+   
+   
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav ul li img{
+    padding: 10px;
+}
+
+/* =============header end============= */
+
+/* ==================================== */
+
+/* =========top section start========== */
+
+
+main{
+  width: 100%;
+}
+.top-container{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.808);
+}
+
+.top-heading{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #562EFF;
+}
+
+.top-playerbox .players{
+    width: 100%;
+    display: grid;
+   
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+   
+    
+}
+.player{
+    width: 200px;
+    height: 50px;
+    display: flex;
+   flex-direction: row;
+    
+   /* padding-left: 40px; */
+   /* background-color: #562EFF; */
+    align-items: center;
+   
+    margin: 5px ;
+}
+.player img{
+    display: inline-block;
+    width: 30%;
+    padding-right: 10px;
+   
+}
+.player h3{
+    font-weight: 400;
+   
+}
+.div{
+    width: 830px;
+    height:2px;
+    background-color: rgba(128, 128, 128, 0.342);
+    margin-top: 20px;
+}
+
+/* top player end */
+
+
+/* top blog start */
+
+.top-blogbox{
+     margin-top: 20px;
+}
+.blog-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.blog{
+    text-align: center;
+    display: flex;
+    
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+    padding-right: 10px;
+}
+
+.para h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.para p{
+    padding-top: 20px;
+    color: #562EFF;
+    font-size: 16px;
+}
+.gray{
+    color: #9F9F9F;
+}
+/* ==========top section end=============== */
+
+/* ======================================== */
+
+/* =========course section start=========== */
+
+.course-container{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.808);
+}
+
+.courses{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.course img{
+    width: 200px;
+    height: 109px;  
+}
+.course h3{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.925);
+}
+.course h5{
+    color: #ED6B4F;
+    font-weight: 300;
+}
+.rating-box{
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-star{
+    color: #aeaeae96;
+   
+}
+.clr{
+    color: #FFC014;
+}
+.rating{
+    color: rgba(128, 128, 128, 0.712);
+}
+.duration{
+    color: #FF4A60;
+    padding: 3px;
+    background-color:  #FEE5DF;
+    border-radius: 10px;
+}
+
+/* ==========coure section end============= */
+
+/* ======================================== */
+
+/* ======media query for mobile============= */
+
+@media only screen and (max-width: 600px) {
+   header{
+       height: 13vh;
+   }
+   
+    .header-container{
+       flex-direction: column;
+       align-items: center; 
+   }
+   /* header end */
+   .top-container{
+       width: 90vw;
+      
+       grid-template-rows: 1fr;
+   }
+
+   .top-playerbox .players{
+       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      }
+      .player{
+          width: 200px;
+      }
+      .blog-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .blog{
+          display: flex;
+          flex-direction: column;
+      }
+      .div{
+          width: 100%;
+      }
+      .course-container{
+          width: 90vw;
+      }
+
+      .courses{
+          flex-direction: column;
+          align-items: center;
+      }
+
+}
+
+/*  tab */
+
+@media only screen and (min-width: 600px) and (max-width:992px){
+    header{
+      
+    }
+    .top-container{
+        width: 90vw; 
+        grid-template-rows: 1fr;
+    }
+    .top-playerbox .players{
+        width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+   
+       }
+       .div{
+           width: 100%;
+       }
+       .blog-box{
+        width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+       }
+       .blog{
+          width: 350px;
+          }
+
+          .course-container{
+            width: 90vw;
+        }
+  
+        .courses{
+            flex-direction: column;
+            align-items: center;
+        }
+        .course{
+           padding: 30px;
+        }
+        .idea-part img{
+            width: 30px;
+        }
+
+}
